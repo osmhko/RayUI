@@ -39,6 +39,7 @@ local function LoadFunc()
 	restedxpBar:SetAllPoints()
 	restedxpBar:SetStatusBarTexture(R.media.normal)
 	restedxpBar:SetStatusBarColor(0, .4, .8)
+	restedxpBar:SetFrameLevel(xpBar:GetFrameLevel()-1)
 
 	local repBar = CreateFrame("StatusBar", nil, Minimap)
 	repBar:SetPoint("TOPLEFT", xpBar, "BOTTOMLEFT", 0, -4)
